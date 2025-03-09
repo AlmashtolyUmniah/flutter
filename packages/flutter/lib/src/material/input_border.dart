@@ -330,7 +330,7 @@ class OutlineInputBorder extends InputBorder {
   const OutlineInputBorder({
     super.borderSide = const BorderSide(),
     this.borderRadius = const BorderRadius.all(Radius.circular(4.0)),
-    this.gapPadding = 4.0, required OutlineInputBorder focusedBorder,
+    this.gapPadding = 4.0,
   }) : assert(gapPadding >= 0.0);
 
   // The label text's gap can extend into the corners (even both the top left
