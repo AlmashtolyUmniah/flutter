@@ -9,6 +9,7 @@ import 'dart:math' as math;
 import 'dart:ui' show lerpDouble;
 
 import 'package:flutter/foundation.dart' show clampDouble;
+import 'package:flutter/src/material/input_border.dart';
 import 'package:flutter/widgets.dart';
 
 /// Defines the appearance of an [InputDecorator]'s border.
@@ -329,7 +330,7 @@ class OutlineInputBorder extends InputBorder {
   const OutlineInputBorder({
     super.borderSide = const BorderSide(),
     this.borderRadius = const BorderRadius.all(Radius.circular(4.0)),
-    this.gapPadding = 4.0,
+    this.gapPadding = 4.0, required OutlineInputBorder focusedBorder,
   }) : assert(gapPadding >= 0.0);
 
   // The label text's gap can extend into the corners (even both the top left
